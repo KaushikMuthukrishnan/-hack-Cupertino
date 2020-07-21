@@ -1,1 +1,2 @@
-# -hack-Cupertino
+# Know Your Nation - &lt;hack&gt; Cupertino
+Presenting Know Your Nation, the free online resource aimed towards immigrants and their transition into a new life! Know Your Nation's website is the ideal place to educate immigrants and their families of their fundamental rights and privileges that are guaranteed under the United States Constitution. With various educational resources, Know Your Nation is a go-to website for anybody, from a curious permanent resident to an avid civilian.
