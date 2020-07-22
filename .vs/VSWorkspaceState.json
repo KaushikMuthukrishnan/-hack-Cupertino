@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\bootstrap",
-    "\\bootstrap\\css",
+    "\\bootstrap\\js",
     "\\images"
   ],
-  "SelectedNode": "\\bootstrap\\css\\bootstrap.css",
+  "SelectedNode": "\\bootstrap\\js\\bootstrap.bundle.js",
   "PreviewInSolutionExplorer": false
 }

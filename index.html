@@ -12,12 +12,17 @@
 		<div>
 			<nav class="navbar navbar-expand-sm">
 				<div class="collapse navbar-collapse">
-					<a class="nav-item nav-link active" href="index.html">
-						<button type="button">Home</button>
-					</a>
+					<a class="btn btn-secondary nav-item nav-link active" role="button" href="index.html">Home</a>
 					<a class="nav-item nav-link" href="govt.html">The Government</a>
 					<a class="nav-item nav-link" href="rights.html">Rights of the Citizen</a>
 					<a class="nav-item nav-link" href="duties.html">Duties of the Citizen</a>
+					<div class="nav-item nav-link dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#translator">Translate Page</a>
+							<a class="dropdown-item" href="#">Print Info</a>
+						</div>
+					</div>
 				</div>
 			</nav>	
 		</div>
@@ -54,9 +59,9 @@
 		</div>
 		<footer class="footer">
 			<div id="translate-menu">
-				<img src="images/translate (1).png" alt="Google Translate Icon">
+				<img id="translator" src="images/translate (1).png" alt="Google Translate Icon">
 			</div>
-			<button id="print-trigger" type="button" onclick="print();">Print This Page</button>
+			<a id="print-trigger" type="button" onclick="print();">Print This Page</a>
 		</footer>
 
 		<script type="text/javascript" src="translator.js"></script>
@@ -64,6 +69,7 @@
 			function googleTranslateElementInit() {
 				new google.translate.TranslateElement({pageLanguage: 'en'}, "translate-menu");
 			}</script>
+		<script type="text/javascript" src="bootstrap/js/jquery-3.5.1.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 	</body>		

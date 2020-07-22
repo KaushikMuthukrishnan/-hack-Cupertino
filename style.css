@@ -19,6 +19,11 @@
 	color:#a5d8ff;
 }
 
+nav .dropdown {
+	position: absolute;
+	right: 0px;
+}
+
 
 /*Body*/
 .jumbotron-fluid {
@@ -28,6 +33,8 @@
 .jumbotron img {
 	opacity: 0.8;
 	margin-top: -8em;
+	filter: blur(6px);
+
 }
 
 .jumbotron h1 {
@@ -50,6 +57,18 @@ div.article {
 	margin-bottom: 32px;
 }
 
+div.row {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.sticky-top {
+	height: 20%;
+	top: 4em;
+	overflow: visible;
+}
+
+
 /*Footer*/
 
 .footer {
@@ -57,6 +76,7 @@ div.article {
 	bottom: 0px;
 	width: 100%;
 	background: #323f63;
+	height: 3.5em;
 }
 
 .footer > div {
@@ -67,7 +87,9 @@ div.article {
 
 #print-trigger {
 	position: relative;
+	color: #a5d8ff;
 }
+
 
 #translate-menu > div {
 	display: inline-block;

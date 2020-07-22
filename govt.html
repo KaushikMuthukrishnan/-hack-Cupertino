@@ -12,42 +12,67 @@
 		<div>
 			<nav class="navbar navbar-expand-sm">
 				<div class="collapse navbar-collapse">
-					<a class="nav-item nav-link" href="index.html">
-						<button type="button">Home</button>
-					</a>
+					<a class="btn btn-secondary nav-item nav-link" role="button" href="index.html">Home</a>
 					<a class="nav-item nav-link active" href="govt.html">The Government</a>
 					<a class="nav-item nav-link" href="rights.html">Rights of the Citizen</a>
 					<a class="nav-item nav-link" href="duties.html">Duties of the Citizen</a>
+					<div class="nav-item nav-link dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#translator">Translate Page</a>
+							<a class="dropdown-item" href="#">Print Info</a>
+						</div>
+					</div>
 				</div>
 			</nav>	
 		</div>
 		<div class="container row">
-			<div class="col-md-3 col-lg-4">
-				<a class="nav-item nav-link" href="">HELLO</a>
-				<a class="nav-item nav-link" href="">HELLO</a>
-				<a class="nav-item nav-link" href="">HELLO</a>
-				<a class="nav-item nav-link" href="">HELLO</a>
+			<div class="sticky-top col-md-3 col-lg-4">
+				<a class="nav-item nav-link" href="#top">Branches of Government</a>
+				<a class="nav-item nav-link" href="#legislative">Legislative Branch</a>
+				<a class="nav-item nav-link" href="#executive">Executive Branch</a>
+				<a class="nav-item nav-link" href="#judicial">Judicial Branch</a>
+				<a class="nav-item nav-link" href="">Checks and Balances</a>
 			</div>
 			<div class="col-md-9 col-lg-8">
-				<article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+				<article>
+					<h1 id="top">Branches of Government</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
 					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
 					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
 					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
 					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
-					neque aliquam. Mattis molestie a iaculis at. Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
+					neque aliquam. Mattis molestie a iaculis at. </p>
+					<h3 id="legislative">Legislative Branch</h3>
+					<p>Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
+					Pellentesque elit eget gravida cum sociis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
+					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
+					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
+					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
+					neque aliquam. Mattis molestie a iaculis at. Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.</p>
+					<h3 id="executive">Executive Branch</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
+					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
+					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
+					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
+					neque aliquam. Mattis molestie a iaculis at. <p>
+					<h3 id="judicial">Judicial Branch</h3>
+					<p>Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
 					Pellentesque elit eget gravida cum sociis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
 					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
 					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
 					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
 					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
 					neque aliquam. Mattis molestie a iaculis at. Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
-					Pellentesque elit eget gravida cum sociis.
+					Pellentesque elit eget gravida cum sociis.Pellentesque elit eget gravida cum sociis.<p>
 				</article>
 			</div>
 		</div>		
 		<footer class="footer">
 			<div id="translate-menu" >
-				<img src="images/translate (1).png" alt="Google Translate Icon">
+				<img id="#translator" src="images/translate (1).png" alt="Google Translate Icon">
 			</div>
 			<button id="print-trigger" type="button" onclick="print();">Print This Page</button>
 		</footer>
@@ -57,6 +82,7 @@
 			function googleTranslateElementInit() {
 				new google.translate.TranslateElement({pageLanguage: 'en'}, "translate-menu");
 			}</script>
+		<script type="text/javascript" src="bootstrap/js/jquery-3.5.1.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	</body>		
 
