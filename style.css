@@ -1,3 +1,95 @@
-﻿body
-{
+﻿body {
+
 }
+
+/*Navbar*/
+
+
+.navbar {
+	z-index: 1;
+	background-color: #323f63;
+	width: 100%;
+}
+
+.nav-item button {
+	color: #323f63;
+}
+
+.nav-item {
+	color:#a5d8ff;
+}
+
+
+/*Body*/
+.jumbotron-fluid {
+	padding: 32px 32px;
+}
+
+.jumbotron img {
+	opacity: 0.8;
+	margin-top: -8em;
+}
+
+.jumbotron h1 {
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	color: white;
+	font-size: 6em;
+	top: 4em;
+	text-shadow: 5px 5px 2px gray 
+}
+
+div.title {
+	font-weight: bold;
+	font-size: 48px;
+}
+
+div.article {
+	font-size: 20px;
+	margin-bottom: 32px;
+}
+
+/*Footer*/
+
+.footer {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	background: #323f63;
+}
+
+.footer > div {
+	position: absolute;
+	display: inline-block;
+	right: 0px;
+}
+
+#print-trigger {
+	position: relative;
+}
+
+#translate-menu > div {
+	display: inline-block;
+	float:right;
+}
+#translate-menu > img {
+	position: relative;
+	display: inline-block;
+	right: 0.5em;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 575.98px) {
+	
+
+
+}
+
+
+@media (min-width: 576px;) and (max-width: 767.98px) {
+
+}
+
