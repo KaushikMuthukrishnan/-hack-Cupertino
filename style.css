@@ -2,21 +2,51 @@
 
 }
 
-/*Navbar*/
-
-
-.navbar {
-	z-index: 1;
-	background-color: #323f63;
-	width: 100%;
+/*----Navbar----*/
+#DDMenu-SM-XS::after {
+	visibility: hidden;
 }
 
-.nav-item button {
-	color: #323f63;
+nav a.btn {
+	background-color: #545b62;
+	border: none;
+}
+
+.navbar {
+	background-color: #323f63;
+	width: 100%;
+	z-index: 2
+}
+
+nav .active {
+	color: white;
 }
 
 .nav-item {
 	color:#a5d8ff;
+	transition: 200ms color;
+}
+
+.nav-item:hover {
+	color:white;
+}
+
+#my-menu-button {
+	min-width: 80px;
+}
+
+#mobile-nav a.dropdown-toggle {
+	padding-top: 16px;
+}
+
+#my-menu-button h6 {
+	width: 60px;
+	border: 3px solid #a5d8ff;
+	border-radius: 12px
+}
+
+a#DDMenu-SM-XS {
+	height: 46px;
 }
 
 nav .dropdown {
@@ -24,8 +54,20 @@ nav .dropdown {
 	right: 0px;
 }
 
+#mobile-nav > div {
+	width:100%;
+}
 
-/*Body*/
+#mobile-nav > div a {
+	color: #323f63;
+}
+
+#mobile-nav > div a:hover, #mobile-nav > div a:active {
+	color: #a5d8ff;
+}
+
+
+/*----Body----*/
 .jumbotron-fluid {
 	padding: 32px 32px;
 }
@@ -34,7 +76,6 @@ nav .dropdown {
 	opacity: 0.8;
 	margin-top: -8em;
 	filter: blur(6px);
-
 }
 
 .jumbotron h1 {
@@ -43,17 +84,17 @@ nav .dropdown {
 	z-index: 1;
 	color: white;
 	font-size: 6em;
+	text-shadow: 5px 5px 2px gray;
 	top: 4em;
-	text-shadow: 5px 5px 2px gray 
 }
 
 div.title {
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 300%;
 }
 
 div.article {
-	font-size: 20px;
+	font-size: 125%;
 	margin-bottom: 32px;
 }
 
@@ -64,54 +105,164 @@ div.row {
 
 .sticky-top {
 	height: 20%;
-	top: 4em;
+	top: 5.5em;
 	overflow: visible;
 }
 
+.sticky-top .nav-item {
+	color: #323f63;
+	font-size: 1.2em;
+	font-weight: 600;
+}
 
-/*Footer*/
+.sticky-top hr {
+	border-top: 2px solid #99c8ef
+}
+
+#mobile-dropdown {
+	width: 100%;
+	background-color: #323f63;
+}
+
+
+/*----Footer----*/
 
 .footer {
 	position: relative;
-	bottom: 0px;
 	width: 100%;
 	background: #323f63;
-	height: 3.5em;
+	height: 3.5em;;
 }
 
-.footer > div {
-	position: absolute;
-	display: inline-block;
-	right: 0px;
-}
 
 #print-trigger {
 	position: relative;
 	color: #a5d8ff;
+	justify-content: center;
 }
 
 
 #translate-menu > div {
 	display: inline-block;
 	float:right;
+
 }
-#translate-menu > img {
+#translator {
 	position: relative;
 	display: inline-block;
 	right: 0.5em;
 }
 
+#translate-menu {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	position: absolute;
+	display: inline-block;
+	right: 0px;
+}
 
-/*Media Queries*/
 
-@media (max-width: 575.98px) {
+/*----Media Queries----*/
+
+/*----XS----*/
+
+@media (max-width: 575.99px) {
 	
+	.jumbotron h1 {
+		top: 1em;
+		font-size: 3em;
+
+	}
+
+
+	#my-menu-button h6 {
+		border: 2px solid #a5d8ff;
+		border-radius: 10px;
+		width:40px;
+	}
+
+	.jumbotron img {
+		filter: blur(2px);
+	}
+	
+	div.title {
+		font-size:200%
+	}
+	
+	div.article {
+		font-size: 90%
+	}
+
+}
+
+
+/*----SM----*/
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	
+	.jumbotron h1 {
+		top: 3em;
+		font-size: 3em;
+		
+	}
+
+	.jumbotron img {
+		margin-top: -4em;
+		filter: blur(4px);
+	}
+
+	div.title {
+		font-size:200%
+	}
+	div.article {
+		font-size: 90%
+	}
+
+
 
 
 }
 
 
-@media (min-width: 576px;) and (max-width: 767.98px) {
+
+
+
+/*----MD----*/
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+	
+	.jumbotron h1 {
+		font-size: 4em;
+		top: 3em;
+	}
+
+	.jumbotron img {
+		margin-top: -6em;
+	}
+
+	div.article {
+		font-size: 100%
+	}
+	div.title {
+		font-size: 250%;
+	}
+
+
 
 }
+
+/*----LG+----*/
+
+
+@media (min-width: 992px) {
+
+	.jumbotron h1 {
+		top: 3em;
+	}
+
+}
+
+
+
 

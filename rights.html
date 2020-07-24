@@ -10,15 +10,35 @@
 	</head>
 	<body>
 		<div>
-			<nav class="navbar navbar-expand-sm">
+
+			<!--Mobile Nav-->
+			<nav id="mobile-nav" class="d-md-none d-lg-none d-xl-none drodown navbar ">
+				<a class="dropdown-toggle" href="#" role="button" id="DDMenu-SM-XS" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<div id="my-menu-button">
+						<h6> </h6>
+						<h6> </h6>
+						<h6> </h6>
+					</div>
+				</a>
+				<div class="dropdown-menu" aria-labelledby="DDMenu-SM-XS">
+					<a class="nav-item nav-link dropdown-item" href="govt.html">The Government</a>
+					<a class="nav-item nav-link dropdown-item" href="rights.html">Rights of the Citizen</a>
+					<a class="nav-item nav-link dropdown-item" href="duties.html">Duties of the Citizen</a>
+					<a class="nav-item nav-link dropdown-item" href="resources.html">Resources</a>
+				</div>
+			</nav>
+
+			<!--LG Sc Nav-->
+			<nav class="navbar navbar-expand-md">
 				<div class="collapse navbar-collapse">
 					<a class="btn btn-secondary nav-item nav-link" role="button" href="index.html">Home</a>
 					<a class="nav-item nav-link" href="govt.html">The Government</a>
 					<a class="nav-item nav-link active" href="rights.html">Rights of the Citizen</a>
 					<a class="nav-item nav-link" href="duties.html">Duties of the Citizen</a>
+					<a class="nav-item nav-link" href="resources.html">Resources</a>
 					<div class="nav-item nav-link dropdown">
-						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="DDMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="DDMenu">
 							<a class="dropdown-item" href="#translator">Translate Page</a>
 							<a class="dropdown-item" href="#">Print Info</a>
 						</div>
@@ -26,33 +46,84 @@
 				</div>
 			</nav>	
 		</div>
-		<div class="container row">
-			<div class="sticky-top col-md-3 col-lg-4">
-				<a class="nav-item nav-link" href="">The Constitution</a>
-				<a class="nav-item nav-link" href="">Bill of Rights</a>
+			<!--SM-DDSIDEBAR-->
+		<div id="mobile-dropdown">
+			<div id="collapsible-sidebar-items" class="d-xs-block d-md-none">
+				<a class="nav-item nav-link" href="#top">Branches of Government</a>
+				<a class="nav-item nav-link" href="#legislative">Legislative Branch</a>
+				<a class="nav-item nav-link" href="#executive">Executive Branch</a>
+				<a class="nav-item nav-link" href="#judicial">Judicial Branch</a>
+				<a class="nav-item nav-link" href="">Checks and Balances</a>
 			</div>
-			<div class="col-md-9 col-lg-8">
-				<article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+			<div id="collapsible-sidebar-toggle">
+				<a class="d-md-none navbar-collapse" href="#">	
+					<h3>Table of Contents</h3>
+				</a>
+			</div>
+		</div>
+			<!---->
+		<div class="container row">
+
+			<!--MD+ SIDEBAR-->
+			<div class="d-none d-md-block sticky-top col-md-3 col-lg-4">
+				<hr>
+				<a class="nav-item nav-link" href="#top">Branches of Government</a>
+				<hr>
+				<a class="nav-item nav-link" href="#legislative">Legislative Branch</a>
+				<hr>
+				<a class="nav-item nav-link" href="#executive">Executive Branch</a>
+				<hr>
+				<a class="nav-item nav-link" href="#judicial">Judicial Branch</a>
+				<hr>
+				<a class="nav-item nav-link" href="">Checks and Balances</a>
+				<hr>
+			</div>			
+			<!---->
+
+			<div class="col-sm-12 col-xs-12 col-md-9 col-lg-8">
+				<article>
+					<h1 id="top">Branches of Government</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
 					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
 					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
 					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
 					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
-					neque aliquam. Mattis molestie a iaculis at. Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
+					neque aliquam. Mattis molestie a iaculis at. </p>
+					<h3 id="legislative">Legislative Branch</h3>
+					<p>Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
+					Pellentesque elit eget gravida cum sociis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
+					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
+					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
+					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
+					neque aliquam. Mattis molestie a iaculis at. Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.</p>
+					<h3 id="executive">Executive Branch</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
+					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
+					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
+					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
+					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
+					neque aliquam. Mattis molestie a iaculis at. <p>
+					<h3 id="judicial">Judicial Branch</h3>
+					<p>Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
 					Pellentesque elit eget gravida cum sociis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
 					massa ultricies mi quis hendrerit dolor. Felis eget velit aliquet sagittis id consectetur purus. Nec sagittis aliquam malesuada
 					bibendum arcu vitae elementum curabitur vitae. Enim sed faucibus turpis in eu mi bibendum neque. Malesuada pellentesque elit eget
 					gravida cum sociis. In dictum non consectetur a erat nam at lectus. Urna nunc id cursus metus aliquam eleifend. Tincidunt eget
 					nullam non nisi. Dictum varius duis at consectetur lorem. Dictum fusce ut placerat orci nulla pellentesque. Porttitor massa id
 					neque aliquam. Mattis molestie a iaculis at. Ut diam quam nulla porttitor massa. Eget egestas purus viverra accumsan in.
-					Pellentesque elit eget gravida cum sociis.
+					Pellentesque elit eget gravida cum sociis.Pellentesque elit eget gravida cum sociis.<p>
 				</article>
 			</div>
-		</div>
-		<footer class="footer">
+		</div>		
+		<footer class="footer container-fluid">
 			<div id="translate-menu">
-				<img id="#translator" src="images/translate (1).png" alt="Google Translate Icon">
-			</div>			
-			<button id="print-trigger" type="button" onclick="print();">Print This Page</button>
+				<img id="translator" src="images/translate (1).png" alt="Google Translate Icon">
+			</div>
+			<br>
+			<div class="col-12">
+				<a id="print-trigger" role="button" onclick="print();">Print This Page</a>
+			</div>
 		</footer>
 
 		<script type="text/javascript" src="translator.js"></script>
@@ -61,6 +132,7 @@
 				new google.translate.TranslateElement({pageLanguage: 'en'}, "translate-menu");
 			}</script>
 		<script type="text/javascript" src="bootstrap/js/jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	</body>		
 
