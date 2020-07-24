@@ -1,12 +1,12 @@
-// JavaScript source code
-function collapseSidebar(element) {
+
+//Mobile Sidebar Functionality =>//
+function collapse(element) {
+	element.style.transitionProperty = "height";
+	element.style.transitionDuration = "300ms";
 	let sbHeight = element.scrollHeight;
-	let sbTransition = element.style.transition;
-	element.style.transition = "";
 
 	requestAnimationFrame(function () {
 		element.style.height = sbHeight + "px";
-		element.style.transition = sbTransition;
 		
 		requestAnimationFrame( function() { 
 			element.style.height = 0 + "px";
@@ -17,7 +17,7 @@ function collapseSidebar(element) {
 	element.style.visibility = "hidden";
 };
 
-function expandSidebar(element) {
+function expand(element) {
 	let sbHeight = element.scrollHeight;
 	element.style.height = sbHeight + "px";
 	element.addEventListener("transitioned", function(event) {
@@ -31,16 +31,19 @@ function expandSidebar(element) {
 
 let sidebar = document.querySelector("#collapsible-sidebar-items");
 
-$(collapseSidebar(sidebar));
+$(collapse(sidebar));
 
 document.querySelector("#collapsible-sidebar-toggle").addEventListener("click", function(event) {
 		
 		if(sidebar.getAttribute("data-collapsed") === "true") {
-			expandSidebar(sidebar);
+			expand(sidebar);
 			sidebar.setAttribute("data-collapsed", "false");
 		} else {
-			collapseSidebar(sidebar);
+			collapse(sidebar);
 		}
 });
+
+//<=Mobile Sidebar Functionality//
+
 
 		
