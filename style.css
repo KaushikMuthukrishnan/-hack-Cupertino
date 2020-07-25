@@ -36,7 +36,7 @@ nav .active {
 }
 
 #mobile-nav a.dropdown-toggle {
-	padding-top: 16px;
+	width:100%;
 }
 
 #my-menu-button h6 {
@@ -46,12 +46,12 @@ nav .active {
 }
 
 a#DDMenu-SM-XS {
-	height: 46px;
+	height: 3em;
 }
 
 nav .dropdown {
 	position: absolute;
-	right: 0px;
+	right:0px;
 }
 
 #mobile-nav > div {
@@ -59,7 +59,7 @@ nav .dropdown {
 }
 
 #mobile-nav > div a {
-	color: #323f63;
+	color: #4062bf;
 }
 
 #mobile-nav > div a:hover, #mobile-nav > div a:active {
@@ -68,6 +68,8 @@ nav .dropdown {
 
 
 /*----Body----*/
+
+
 .jumbotron-fluid {
 	padding: 32px 32px;
 }
@@ -119,10 +121,7 @@ div.row {
 	border-top: 2px solid #99c8ef
 }
 
-#mobile-dropdown {
-	width: 100%;
-	background-color: #323f63;
-}
+
 
 
 /*----Footer----*/
@@ -162,6 +161,8 @@ div.row {
 }
 
 
+
+
 /*----Media Queries----*/
 
 /*----XS----*/
@@ -185,13 +186,47 @@ div.row {
 		filter: blur(2px);
 	}
 	
-	div.title {
+	div.title, article h1 {
 		font-size:200%
 	}
 	
-	div.article {
+	div.article, article p {
 		font-size: 90%
 	}
+
+	nav.navbar {
+		padding:0;
+	}
+
+	#mobile-nav a.dropdown-toggle {
+		padding: 1em 1em 0 1em;
+	}
+
+	#mobile-dropdown {
+		width: 100%;
+		background-color: #323f63;
+	}
+
+	#mobile-dropdown #collapsible-sidebar-items a {
+		text-align: center;
+	}
+
+	#CSBhr {
+		border-top: 0.5px solid white;
+	}
+
+	#collapsible-sidebar-toggle > a {
+		position: relative;
+		right: 50%;
+		left: 50%;
+		color: #a5d8ff;
+	}
+
+	#collapsible-sidebar-toggle {
+		cursor: pointer;
+		height: 2em;
+	}
+
 
 }
 
@@ -212,11 +247,45 @@ div.row {
 		filter: blur(4px);
 	}
 
-	div.title {
+	div.title, article h1 {
 		font-size:200%
 	}
-	div.article {
+	div.article, article p {
 		font-size: 90%
+	}
+
+	nav.navbar {
+		padding:0;
+	}
+
+	#mobile-nav a.dropdown-toggle {
+		padding: 1em;
+	}
+
+	
+	#mobile-dropdown {
+		width: 100%;
+		background-color: #323f63;
+	}
+
+	#mobile-dropdown #collapsible-sidebar-items a {
+		text-align: center;
+	}
+
+	#CSBhr {
+		border-top: 0.5px solid white;
+	}
+
+	#collapsible-sidebar-toggle > a {
+		position: relative;
+		right: 50%;
+		left: 50%;
+		color: #a5d8ff;
+	}
+
+	#collapsible-sidebar-toggle {
+		cursor: pointer;
+		height: 2em;
 	}
 
 
@@ -241,13 +310,12 @@ div.row {
 		margin-top: -6em;
 	}
 
-	div.article {
+	div.article, article p {
 		font-size: 100%
 	}
-	div.title {
+	div.title, article h1 {
 		font-size: 250%;
 	}
-
 
 
 }
@@ -260,6 +328,7 @@ div.row {
 	.jumbotron h1 {
 		top: 3em;
 	}
+
 
 }
 
