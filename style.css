@@ -4,7 +4,7 @@
 
 /*----Navbar----*/
 #DDMenu-SM-XS::after {
-	visibility: hidden;
+	display: none;
 }
 
 nav a.btn {
@@ -121,6 +121,9 @@ div.row {
 	border-top: 2px solid #99c8ef
 }
 
+article ol {
+	list-style-type: upper-roman;
+}
 
 
 
@@ -130,11 +133,12 @@ div.row {
 	position: relative;
 	width: 100%;
 	background: #323f63;
-	height: 3.5em;;
+	height: 4em;;
+	bottom: 0px;
 }
 
 
-#print-trigger {
+#references {
 	position: relative;
 	color: #a5d8ff;
 	justify-content: center;
@@ -259,7 +263,7 @@ div.row {
 	}
 
 	#mobile-nav a.dropdown-toggle {
-		padding: 1em;
+		padding: 1em 1em 0 1em;
 	}
 
 	

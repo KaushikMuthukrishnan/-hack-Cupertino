@@ -37,11 +37,14 @@ function expand(element) {
 
 let sidebar = document.querySelector("#collapsible-sidebar-items");
 
-$(collapse(sidebar));
+if (window.innerWidth < 768) {
+	$(collapse(sidebar));
+};
+
 
 document.querySelector("#collapsible-sidebar-toggle").addEventListener("click", (event) => {
 		
-	if(sidebar.getAttribute("data-collapsed") === "true") {
+	if (sidebar.getAttribute("data-collapsed") === "true" && window.innerWidth < 768) {
 		expand(sidebar);
 	} else {
 		collapse(sidebar);
@@ -54,11 +57,7 @@ sidebar.addEventListener("click", event => {
 
 //<=Mobile Sidebar Functionality//
 
-
-
-
-if (window.innerWidth > 768) {
-	$("#CSBhr").hide();
-} 
-
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'en'}, "translate-menu");
+}
 		
