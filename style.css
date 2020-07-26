@@ -292,6 +292,11 @@ article ol {
 		height: 2em;
 	}
 
+	#my-menu-button h6 {
+		border: 2px solid #a5d8ff;
+		border-radius: 10px;
+		width:40px;
+	}
 
 
 

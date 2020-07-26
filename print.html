@@ -7,6 +7,17 @@
 		<link rel="icon" href="images/government.png">
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
+		<style>
+		@media print {
+			p, h1, h2, h3 {
+				width: 140%;
+			}
+			p {
+				font-size: 12px;
+			}
+			
+		}
+		</style>
 	</head>
 	<body>
 		<div>
@@ -25,7 +36,7 @@
 					<a class="nav-item nav-link dropdown-item" href="govt.html">The Government</a>
 					<a class="nav-item nav-link dropdown-item" href="rights.html">Rights of the Citizen</a>
 					<a class="nav-item nav-link dropdown-item" href="duties.html">Duties of the Citizen</a>
-					<a class="nav-item nav-link dropdown-item" href="resources.html">Resources</a>
+					<a class="nav-item nav-link dropdown-item" href="resources.html">Citizenship and Resources</a>
 					<a class="nav-item nav-link dropdown-item" href="print.html">Printing</a>
 				</div>
 			</nav>
@@ -34,10 +45,10 @@
 			<nav class="navbar navbar-expand-md">
 				<div class="collapse navbar-collapse">
 					<a class="btn btn-secondary nav-item nav-link" role="button" href="index.html">Home</a>
-					<a class="nav-item nav-link active" href="govt.html">The Government</a>
+					<a class="nav-item nav-link" href="govt.html">The Government</a>
 					<a class="nav-item nav-link" href="rights.html">Rights of the Citizen</a>
 					<a class="nav-item nav-link" href="duties.html">Duties of the Citizen</a>
-					<a class="nav-item nav-link" href="resources.html">Resources</a>
+					<a class="nav-item nav-link" href="resources.html">Citizenship and Resources</a>
 					<div class="nav-item nav-link dropdown">
 						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="DDMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="DDMenu">
@@ -51,19 +62,28 @@
 
 		<div class="container row">
 
-			<div class="d-none d-md-block sticky-top col-md-3 col-lg-4">
+			<div class="d-print-none d-none d-md-block sticky-top col-md-3 col-lg-4">
 			</div>			
 
 			<div class="col-sm-12 col-xs-12 col-md-9 col-lg-8">
-				<article>
-					<h1 id="top">The Constitution</h1>
+				<article id="printing-content">
+					<p class="d-print-none">This site was designed as a way to grant quick and accessible information to
+					immigrants of all backgrounds. As such, it would be very convenient if the
+					information this site contains would not be restricted to the web and be
+					available in another medium. <a href="" onclick="print();">Click here</a> to print an abridged,
+					handout version of this site and its contents. Please translate this page to the
+					desired langage prior to printing. </p>
+					<br>
+					<h1>Know Your Nation</h1>
+					<br>
+					<h2>The Constitution</h2>
 					<p>The Constitution is the document that lays the framework for the American
 					government. It dictates who gets what powers and what is legal and all of the
 					essentials needed to create and run a nation. It is based on the idea of
 					Separation of Powers, meaning a system in which the responsibilities of running
 					a nation lie on multiple branches. In the case of the Constitution, three
 					branches were created. </p>
-					<h3 id="branches">Branches of Government</h3>
+					<h3>Branches of Government</h3>
 					<p>At the time of its conception, the United States was to be the only
 					democratic nation in the world. Democracy itself was a very unusual idea at the
 					time, as many societies were under the influence of absolute monarchies. Tired
@@ -74,7 +94,7 @@
 					representative democracy. They went on to create a governing body of three
 					branches, each with a system of checks and balances on the other so no branch
 					would be able to attain absolute power. </p>
-					<h3 id="legislative">Legislative Branch</h3>
+					<h3>Legislative Branch</h3>
 					<p>The legislative branch is a culmination of the aforementioned ancient
 					governing systems: Greek direct democracy and Roman representative democracy.
 					Direct democracy embodies the House of Representatives which is a subdivision of
@@ -89,7 +109,7 @@
 					a law is long and complicated and more information about it can be found can be
 					found “here”. Along with lawmaking Congress is also responsible for the annual
 					budget taxes on the citizens declaring war on other countries. </p>
-					<h3 id="executive">Executive Branch</h3>
+					<h3>Executive Branch</h3>
 					<p>The executive branch is responsible for enforcing all the laws created by
 					Congress. It consists of the president, vice president and cabinet. The
 					president is elected by an electoral college on election day and the cabinet
@@ -102,7 +122,7 @@
 					of the Treasury Secretary of Veterans Affairs. While this is a very long list the
 					main point is that everyone in the executive branch is responsible for
 					upholding the laws of the nation and keeping its inhabitants safe and healthy.</p>
-					<h3 id="judicial">Judicial Branch</h3>
+					<h3>Judicial Branch</h3>
 					<p>The judicial branch is the nation’s justice system. It is a complex
 					hierarchy of lower courts and judges. At the top of the chain is the Supreme
 					Court, whose say is final in all decisions and cases. At the supreme court,
@@ -114,7 +134,7 @@
 					constitution, every person has the right to a fair trial, and so everybody is
 					presumed to be innocent until proven guilty. There are also numerous
 					stipulations regarding the judicial branch within the Constitution. </p>
-					<h3 id="cnb">Checks and Balances</h3>
+					<h3>Checks and Balances</h3>
 					<p>Checks and Balances are a system of keeping all three branches of the
 					government in level with each other. Under this system, no branch can get too
 					powerful as its powers are dependent on and interlinked with the other two
@@ -122,12 +142,127 @@
 					executive orders, yet the financing for them depends on the Congress, as it has
 					control over the national purse. Another example of Check and balances would be
 					how The executive branch appoints Supreme Court Judges, yet they rely on
-					Congressional approval once more. A full list and explanation to this system can
-					be found “here”</p>
+					Congressional approval once more.</p>
+
+
+					<h2 id="top">The Bill of Rights</h2>
+					<p>The bill of rights is another document that dictates the fundamental rights
+					of every citizen of the United States of America. At its conception, the
+					founders of America named 10 key amendments. However, this list has been
+					expanded to a total of 27 amendments to the Bill of Rights. Below is a list of
+					all of the Amendments to the Constitution. However, since the Constitution was
+					writen in semi-archaic English, the nformation below is a loose translation of
+					the modern interpretaions of the twenty-seven amendments.</p>
+					
+					<h3 id="amendments">The Amendments</h3>
+					<ol>
+						<li>Guarantees the rights of freedom of speech, the press, and religion. It also protects the people's right to petition the government for change</li>  
+						<li>Guarantees the right to own arms in the name of self-defense</li>  
+						<li>Citizens will not be forced to provide housing for soldiers in times of war nor peace</li>  
+						<li>Citizens will not be undergo search and seizure without a court warrant and probable cause</li>  
+						<li>Guarantees due process of the law and protects citizens from double jeopardy and self-incrimination</li>  
+						<li>Guarantees the right to a speedy trial, and the right for one to know their accusers and accusations</li>  
+						<li>Guarantees the right to a jury trial</li>  
+						<li>Forbids unusual or cruel punishments and fines</li>  
+						<li>Reserves people's rights not specified in the Constituion</li>  
+						<li>All rights not specified in the Constituion as belonging to the federal government belong to the states and their people</li>  
+						<li>States cannot be subject to lawsuits from those that do not live in that state's borders</li>  
+						<li>Modifies the procedure for electing a President and vice President</li>  
+						<li>Forbids slavery and involutary servitude, except as a form of punishment</li>  
+						<li>Elaborates on Due Process clause, Citizenship clause, and clauses dealing with Confederate leaders</li>  
+						<li>Reserves suffrage rights to citizens regardless of race, color, or previous enslavement</li>  
+						<li>Grants the US Govt. to collect income taxes</li>  
+						<li>Established that senators are elected through popular votes</li>  
+						<li>Prohibits the sale and drinking of alcohol (repealed, see XXI.)</li>  
+						<li>Grants women the right to vote</li>  
+						<li>Changed the start term for Congressional and Presidential terms</li>  
+						<li>Repeals the eighteenth amendment</li>  
+						<li>Sets two terms as the maximum for anyone to serve as President</li>  
+						<li>Grants residents of the Distric of Columbia the right to vote for their own Electors regarding presidential elections</li>  
+						<li>Citizens cannot be denied the right to vote on account of not being able to pay for poll taxes</li>  
+						<li>Establishes the protocol for the successors to the President</li>  
+						<li>Grants citizens eighteen or older the right to vote</li>  
+						<li>Laws varying the salaries of Congresspeople will take effect during the next term</li>  
+
+					</ol>
+
+
+
+					<h2 id="top">Duties of the Citizen</h2>
+					<p>While the framework of the US, being unusual at the time of its creation,
+					   explicitly grants many rights to its citizens, it also expects citizens to
+					   oblige with a fair share of their individual duties. This system of giving
+					   powers to a vested governing body in return for citizens to live their normal
+					   lives is a <strong>Social Contract</strong>. Social Contract theory was a
+					   radical and revolutionary new way of thinking in the late 18th and 19th
+					   centuries. Yet the framers of the American Constitution believed it would be
+					   the best way of preserving the people's right to self rule, while not
+					   constantly engaging in active governing themselves. Instead they would
+					   relinquish their powers to elected individuals to be able to carry happily.
+					   However, this does not mean that citizens are completely separated from the
+					   government and its happenings. Citizens are encouraged to actively voice
+					   their opinions if they see a need for change. This right to voice one's
+					   opinions is protected by the first amendment. Along with watching the
+					   governing process, citizens are also responsible for a few legal duties as
+					   well. These include:
+						<ul>
+							<li>Defending the Constitution- Defending its ideals and the values that it stands for</li>
+							<li>Staying informed of community issues- Being aware of what is happening in one's suroundings</li>
+							<li>Participate in local community- actively contributing to the betterment of ones community</li>
+							<li>Participate in American Democracy and its process- Exercise the democratic right to vote and select representatives</li>
+							<li>Obeying federal and state laws</li>
+							<li>Respecting the, rights, opinions, and boundaries of other- Not intentionally offending others through one's thoughts, behaviors, or actions</li>
+							<li>Paying taxes punctually and with integrity</li>
+							<li>Serving on a Jury- Using this Constitutional right to ensure everyone is given a fair trial by jury</li>
+							<li>Serving to defend the nation if needed- Signing up for military service if able to do so</li>
+						</ul>
+					</p>			
+					
+
+
+					<h2 id="top">Citizenship</h2>
+
+					<h3 id="citizenship">Permanent Residency</h3>
+					<p>The path to becoming a US citizen begins with a Permanent Residency. Once an
+					immigrant has been approved as a Permanent Resident of the US (also known as a
+					Green Card holder), they must reside in the US for a time of five years. Foreign
+					visits during this timeframe are to be kept under six months per year at a time,
+					in order to help the citizenship process go smoothly. One this five year time
+					period has ended, immigrants will now be eligible for Naturalization.</p>
+					<h3 id="naturalization">Naturalization</h3>
+					<p>Naturalization is not a process, separate to citizenship, but merely a part
+					of it. Prior to this, all citizenship requirements must be
+					met, including passing a general knowledge test about US History. After all
+					requirements have been met, the final step is attending a naturalization
+					ceremony. A naturalization ceremony can take place, typically in federal
+					courthouses. Many people are are scheduled for a ceremony at a time. During
+					the ceremony, prospective citizens must swear an Oath of
+					Allegiance, to the US and the Constitution, and will henceforth become
+					official United States citizens. <p>
+					<h3 id="volunteering">Community Service</h3>
+					<p>Among a citizens rights and duties are their obligation to engage in
+					community events. This may be in the form of partaking in community gatherings,
+					or volunteering to local non-profits, or even joining local grassroots organizations to make changes in ones community.
+					Many, if not all, of these non-profits have a website for themselves, as a way
+					to spread the word about their mission and to recruit volunteers.
+					This way, the efforts of volunteers will be fruited in their own local communities.</p>
+					<h3 id="contact">Contact Your Local Congresspeople</h3>
+					<p>Congresspeople are people elected by the people, for the people. As such,
+					they are responsible for listening to their constituents and to take action on
+					their behalf. After all, elected Congresspeople are the voices of the regular
+					American citizen. The American people elect these Congresspeople into office so
+					that they can fix their problems. Because of this, civic engagement is strongly
+					characterized by citizens reaching out to their local representatives in order
+					to discuss or take action on issues plaguing society. There a total of 535
+					Senators and Representatives in the nation. Contacting them or getting ahold of
+					their time is really not as intimidating as it sounds. Any form of contact
+					works, including email, mail, or telephone. As with everything, patience and persistence is key.
+
+
 				</article>
 			</div>
 		</div>		
-		<footer class="footer container-fluid">
+		<footer class="d-print-none footer container-fluid">
 			<div id="translate-menu">
 				<img id="translator" src="images/translate (1).png" alt="Google Translate Icon">
 			</div>
